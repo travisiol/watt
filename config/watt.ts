@@ -7,7 +7,7 @@ export const HOLDER_REWARD_PERCENT = 25;
 export const TOKEN_SYMBOL = "$WATT";
 export const CONTRACT_ADDRESS: string | null = null; // null → renders "COMING SOON"
 
-export const TWITTER_URL = "https://x.com/wattonchain";
+export const TWITTER_URL = "https://x.com/Wattdotcash";
 export const APP_URL = "#";
 
 export const DEMO_BILL_DEFAULT = 184.2;
