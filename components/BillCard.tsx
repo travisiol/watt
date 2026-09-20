@@ -31,17 +31,17 @@ export function BillCard({
       className={`relative w-[280px] sm:w-[320px] rounded-2xl border border-line bg-panel p-6 shadow-[0_40px_120px_-30px_rgba(0,0,0,0.9)] ${className}`}
     >
       <div
-        className="pointer-events-none absolute -inset-8 -z-10 rounded-[2rem] opacity-60 blur-3xl"
+        className="breathe-glow pointer-events-none absolute -inset-8 -z-10 rounded-[2rem] blur-3xl"
         style={{
           background:
-            "radial-gradient(closest-side, rgba(255,217,0,0.25), transparent 70%)",
+            "radial-gradient(closest-side, rgba(255,217,0,0.4), transparent 70%)",
         }}
       />
 
       <div className="flex items-center justify-between">
         <span className="eyebrow">Electricity bill</span>
         <div className="flex h-7 w-7 items-center justify-center rounded-full bg-yellow/10">
-          <LightningMark className="h-3.5 w-3.5 text-yellow" />
+          <LightningMark className="flicker-bolt h-3.5 w-3.5 text-yellow" />
         </div>
       </div>
 

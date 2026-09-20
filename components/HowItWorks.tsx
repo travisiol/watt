@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Camera, ShieldCheck, Wallet } from "lucide-react";
+import { ElectricTrace } from "./ElectricTrace";
 
 const STEPS = [
   {
@@ -40,7 +41,13 @@ export function HowItWorks() {
           VALUE RETURNED.
         </motion.h2>
 
-        <div className="mt-20 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-3">
+        <div className="relative mt-20 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-3">
+          <ElectricTrace
+            viewBox="0 0 1000 4"
+            d="M 0 2 L 1000 2"
+            duration={4.5}
+            className="pointer-events-none absolute -top-px left-0 hidden h-[2px] w-full sm:block"
+          />
           {STEPS.map((step, i) => {
             const Icon = step.icon;
             return (

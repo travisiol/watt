@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { BillCard } from "./BillCard";
+import { ElectricTrace } from "./ElectricTrace";
 
 export function Hero() {
   return (
@@ -73,6 +74,23 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative flex justify-center lg:justify-end"
         >
+          <div
+            aria-hidden
+            className="circuit-grid pointer-events-none absolute -inset-20"
+          />
+          <ElectricTrace
+            viewBox="0 0 420 520"
+            d="M 10 60 L 150 60 L 150 170 L 260 170"
+            duration={3.2}
+            className="pointer-events-none absolute -left-6 -top-10 h-[520px] w-[420px] opacity-70"
+          />
+          <ElectricTrace
+            viewBox="0 0 420 520"
+            d="M 410 470 L 270 470 L 270 350 L 160 350"
+            duration={3.8}
+            delay={1.1}
+            className="pointer-events-none absolute -left-6 -top-10 h-[520px] w-[420px] opacity-70"
+          />
           <BillCard amount="€184.20" />
         </motion.div>
       </div>

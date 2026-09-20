@@ -7,7 +7,7 @@ import { LightningMark } from "./Logo";
 export function FinalCTA() {
   return (
     <section className="relative overflow-hidden bg-yellow px-6 py-28 text-black sm:px-10 sm:py-36">
-      <LightningMark className="pointer-events-none absolute -right-10 -top-16 h-72 w-72 text-black/10 sm:h-[26rem] sm:w-[26rem]" />
+      <LightningMark className="flicker-bolt pointer-events-none absolute -right-10 -top-16 h-72 w-72 text-black/10 sm:h-[26rem] sm:w-[26rem]" />
 
       <div className="relative mx-auto max-w-5xl text-center">
         <motion.h2
